@@ -16,9 +16,4 @@ spec:
       storage: 2G
   accessModes:
     - ReadWriteOnce
-  selector:
-    matchLabels:
-      part-of: k8s-anotherclass
-      component: backend-server
-      name: api-tester
-      instance: api-tester-2121-files
+  #storageClassName: standard
