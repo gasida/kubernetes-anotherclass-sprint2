@@ -11,6 +11,8 @@ metadata:
     version: 1.0.0
     managed-by: kubectl
 spec:
+  nodeSelector:
+    kubernetes.io/hostname: myk8s-control-plane
   selector:
     matchLabels:
       part-of: k8s-anotherclass
